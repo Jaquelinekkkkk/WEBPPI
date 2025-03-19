@@ -1,8 +1,89 @@
 <html>
-<head> Minha página</head>
+    <head>
+        <style>
+            p, span{
+                border:1px solid rgb(221, 34, 34);
+            }
+            #idgotas{
+                width: 100px;
+                height: 100px;
+                filter: invert(2);
+                border-radius: 50%;
+
+
+            }
+            #idgatos{
+                width: 100px;
+                height: 100px;
+                filter: sepia(2);
+            }
+            table, tr,td{
+                border:
+            }
+        </style>
+    </head>
+<head><b> Minha página em negrito</b></head>
 <body>
-    <p>Titulo</p>
-    <h1>Nivel 1</h1>
+    <p><i>Titulo em italico</i></p>
+    <h1>Nivel 1 titulo</h1>
     <h2> nivel2</h2>
+    <span> este e<br> um texto quebrado</br></span>
+    <span> este e um span</span>
+    <p> texto <mark>"marcado"</mark></p>
+    <h1> tag de imagem</h1>
+    <p> a tag para exibir uma image é a tag "img" tem atributos como src= que permite definir o carinho para a fontr de imagem</p>
+    <img id ="idgotas" src ="./gotas.jpg" alt="pato"><br>
+    <img id="idgatos" src ="./download.jpg" alt="naruto">
+
+    <h1> tag de listagem</h1>
+    <p> o html possui listas ordenadas e nao ordenadas que pode ser feitas com as tags "ol" e "ul" respectivamente. A lista ordenada permite definir o tipo de sequencia por meio do parametro TYPE=[1,A,a,I,i]</p>
+    <ol type="A" start="10">
+        <li> 
+            pera
+        </li>
+        <li> 
+            maca
+        </li>
+        <li>
+            uva
+        </li>
+        <li>
+            manga
+        </li>
+        <li> 
+            melao
+        </li>
+        <li>
+            terra
+        </li>
+
+    </ol>
+    <h2> exemplo de lista nao ordenada</h2>
+    <ul>
+        <li> osso  </li>
+        <li> agua </li>
+        <li> papelao</li>
+        <li> acucar</li>
+        <li> sal </li>
+    </ul>
+    <hr>
+    <h3>
+        tabela
+    </h3>
+    <table>
+        <tr> 
+            <td> celula 1x1 </td>
+            <td> celula 1x2 </td>
+            <td> celula 1x3 </td>
+            <td> celula 1x4 </td>
+        </tr>
+        <tr>
+            <td> celula 1x1 </td>
+            <td> celula 2x2 </td>
+            <td> celula 3x3 </td>
+            <td> celula 4x4 </td>
+        </tr>
+    </table>
+
 </body>
 </html>
