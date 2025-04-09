@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box{/*se usarmos o ".container" a configuração das coisas será diferente.*/
+            display: inline-block;
+            border: 1px solid red;
+            height: 100px;
+            width: 100px;
+
+        }
+
+        div{
+            text-align: center;/*alinhamento do texto*/
+            }
+            p{
+                margin-top: 40%;
+            }
+
+        #box1{
+            position: fixed ;
+            height: 190px;
+            width:  190px;
+            top: 0%;
+            left: 0px;
+            background-color: red;
+
+        }
+        #box2{/*move o bloco 2 para baixo*/
+            position:fixed;
+            height: 190px;
+            width:  190px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: green;
+        }
+        #box3{
+            position: fixed;/*move os blocos  4 e 5 para ao lado do bloco 2 e o bloco 3 vai para outra camada se posicionando em relacao a tela.*/ 
+            height: 190px;
+            width:  190px;
+            top: 0px;
+            right: 0px;
+            background-color: blueviolet;
+        }
+        #box4{
+            position: fixed;
+            height: 190px;
+            width:  190px;
+            bottom: 0px;
+            right: 0px;
+            background-color:yellow ;
+
+
+        }
+        #box5{
+            position: fixed;
+            height: 190px;
+            width:  190px;
+            bottom: 0px;
+            left: 0px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="box1" class="box"><p>1Esquerda em cima</p></div>
+        <div id="box2" class="box"><p>2Centro</p></div>
+        <div id="box3" class="box"><p>3Direita em cima</p></div>
+        <div id="box4" class="box"><p>4Direita em baixo</p></div>
+        <div id="box5" class="box"><p>5Esquerda em baixo</p></div>
+        
+    </div>
+    
+</body>
+</html>
