@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{min-height: 100lvh; 
+        background-color: lightgray;
+        display: grid;
+        body{
+        grid-template-areas:
+        "Cabecalho"
+        "Menu"
+        "Principal"
+        "Aside"
+        "Rodape"
+        ;
+        }
+    
+    }
+
+    .box{ border: 1px solid black;}
+    #box1{grid-area: Cabecalho}
+    #box2{grid-area: Menu}
+    #box3{grid-area: Principal}
+    #box4{grid-area: Aside}
+    #box5{grid-area: Rodape}
+
+    @media screen and (max-width: 600px){
+      body{
+        grid-template-areas:
+        "Cabecalho"
+        "Menu"
+        "Principal"
+        "Aside"
+        "Rodape"
+      }  
+    }
+    @media screen and  (min-width: 600px) and (max-width: 900px){
+      body{
+        background-color: aquamarine;
+        grid-template-areas:
+        "Cabecalho"
+        "Menu"
+        "Principal"
+        "Aside"
+        "Rodape"
+      }  
+    }
+    @media screen and (min-width: 900px){
+      body{
+        background-color: lightcoral;
+        grid-template-areas:
+        "Cabecalho"
+        "Menu"
+        "Principal"
+        "Aside"
+        "Rodape"
+      }  
+    }
+        
+        
+    
+</style>
+
+</head>
+<body>
+    <div id="box1" class="box"><p>Cabecalho</p></div>
+    <div id="box2" class="box"><p>Menu</p></div>
+    <div id="box3" class="box"><p>Principal</p></div>
+    <div id="box4" class="box"><p>Aside</p></div>
+    <div id="box5" class="box"><p>Rodape</p></div>
+
+</body>
+</html>

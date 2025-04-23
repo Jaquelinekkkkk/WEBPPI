@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid purple;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows:  2fr 3fr;
+            height: 100lvh;
+        }
+        
+        div{
+            text-align: center;/*alinhamento do texto*/
+            }
+            
+        .box{
+          
+            border: 1px solid black;
+        }
+        #box1{
+            background-color: blue;
+          /*  grid-column-start: 1; Para definir, ou seja ele comeca na coluna 1*/
+           /* grid-column-end: 4; termina na coluna 4*/
+           grid-column: 1/4;
+           grid-row: 2/4;
+           /*grid-row-start: 2;8*
+           /*grid-row-end: 4;*/
+           
+           /*grid-arae: 2/1/4/4*/
+        }
+        #box2{
+            background-color: purple;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        #box3{
+            background-color: yellow;
+          
+        }
+        #box4{
+            background-color: red;
+           
+        }
+        #box5{
+            background-color: green;
+         
+        }
+        #box6{
+            background-color: orange;
+          
+        }
+        
+       
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+            <div id="box1" class="box"><p>Atividade do módulo 4</p></div>
+            <div id="box2" class="box"><p>Slide 5</p></div>
+            <div id="box3" class="box"><p>3</p></div>
+            <div id="box4" class="box"><p>4</p></div>
+            <div id="box5" class="box"><p>5</p></div>
+            <div id="box6" class="box"><p>5</p></div>
+
+
+           
+    </div>
+</body>
+</html>
