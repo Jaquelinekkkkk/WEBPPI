@@ -7,99 +7,85 @@
     <title>Document</title>
     <style>
         .container {
-            border: 1px solid purple;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 2fr 3fr;
-            height: 100lvh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /*align-items: center;  */          
+            height: 30lvh;
+            width: 100lvh;
         }
-
-        div {
-            text-align: center;
-            /*alinhamento do texto*/
-        }
-
-        .box {
-
+        .japao {
             border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            width: 400px;
         }
-
-      /*  #box10 {
-            background-color: blue;
-            /*  grid-column-start: 1; Para definir, ou seja ele comeca na coluna 1*/
-            /* grid-column-end: 4; termina na coluna 4*/
-           /* grid-column: 1/4;
-            grid-row: 2/4;
-            /*grid-row-start: 2;8*
-           /*grid-row-end: 4;*/
-
-            /*grid-arae: 2/1/4/4*/
-        
-
-      /*  #box1 {
-            background-color: white;
-           /* grid-column-start: 1;
-            grid-column-end: 2;*/
-        
-
-        #box2 {
+        #japao{
+            height: 120px;
+            width: 120px;
             background-color: red;
-            border-radius: 60px;
-
+            border-radius: 50%;
         }
 
-        #box3 {
-            background-color: red;
 
+        .holanda {
+            border: 1px solid black;
+            height: 300px;
+            width: 400px;
         }
-
-        #box4 {
-            background-color: white;
-
-        }
-
-        #box5 {
-            background-color: blue;
-
-        }
-        #box6{
-            background-color: green;
-            
-        }
-        #box7{
-            background-color: white;
-        }
-        #box8{
-            background-color:red ;
-        }
+        .italia {
+            border: 1px solid black;
+            display: flex;
+            height: 400px;
+            width: 400px;
+        }      
+         .qustoes{
+            border: 1px solid black;
+            height: 300px;
+            width: 400px;
+         }
     </style>
 </head>
 
 <body>
 
     <div class="container">
-       
-        <div id="box2" class="box">
-            p
-        </div>
-        <div id="box3" class="box">
-           a
-        </div>
-        <div id="box4" class="box">
+        <div class="questoes">
+            <div>
+                <div style="background-color: white; height: 100px;"></div>
+    
+                <p>1- Quando o usuário busca uma determinada página html. O navegador manda uma requisição HTTP para o servidor, assim ele retorna com um response.
+                    Quando acessado um site, o computador encontra o endereço deste site usando o DNS. Depois, estabelece uma conexão com o servidor usando TCP/IP. O navegador então pede os arquivos do site por HTTP ou HTTPS, depois servidor envia os arquivoss, com isso navegador organiza tudo 
+                    para mostrar o site na tela do usuario 
+                </p>
+                <p>2-  É o padrão para criar páginas web. Html é uma linguagem de marcação e java e javascript é uma linguagem de programao ainda diferentes entre si. </p>
+                <p>3- Uma regra em css: (P)se refere a  paragrafo, (h1) se refere a relevancia de titulos, h1 ate h6, (img) se refere a imagens, então essas propiedades são as regras de html</p></p>
+            </div>
 
+
+
+        <div class="japao">
+            <div id="japao"></div>
         </div>
-        <div id="box5" class="box">
-           
+
+        <div class="holanda">
+            <div style="background-color: red; height: 100px;"></div>
+            <div style="background-color: white; height: 100px;"></div>
+            <div style="background-color: blue ; height: 100px;"></div>
         </div>
-        <div id="box6" class="box">
-          
+        <div class="italia">
+            <div style="background-color: green; width: 133px;"></div>
+            <div style="background-color: white; width: 133px;"></div>
+            <div style="background-color: red; width: 133px;"></div>
+            </div>
         </div>
-        <div id="box7" class="box">
-          
-        </div>
-        <div id="box8" class="box">
-          
-        </div>
+       
+
+       
+       
+      
         
 
 
