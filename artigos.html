@@ -9,7 +9,8 @@
             background-color: #ECECEC;
             font-family: Courier;
         }
-        .top-barra {
+        .top-barra {        /*o primeiro elemento da claase barra fica a esquerda e o segundo a direita*/
+
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -27,27 +28,30 @@
             border-radius: 5px;
             background-color: white;
         }
-        .nav-links {
-            display: flex;
+        .horizontal-links {
+            display: flex;/*horizontal*/
             justify-content: center;
-            background-color: #BBC8BE;
-            padding: 10px;
+            background-color:#BBC8BE;
+            padding: 10px;/*espaço interno vertical*/
         }
-        .nav-links a {
+        .horizontal-links a {
             color: #386641;
-            text-decoration: none;
-            padding: 10px;
-            margin: 5px;
+            text-decoration: none;/*sublinhado*/
+            padding: 10px; /*5tamanho da caixa verde*/
+            margin: 5px;/*espaços entre os links*/
             background-color: #98AE9C;
-            border-radius: 5px;
+            border-radius: 5px;/*redondinho*/
+          /*/  font-weight: bold;*/
+        }
+        a{
             font-weight: bold;
         }
-        .separator-container {
+        .separador-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 20px 0;
-            gap: 10px;
+            margin: 20px 0;/*espaco externo*/
+            gap: 10px;/*espaco intero*/
         }
         .div-traco {
             width: 100%;
@@ -58,13 +62,14 @@
             font-weight: bold;
             font-size: 18px;
             color: #386641;
+            
         }
         .vertical-links {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            margin: 20px 0;
-            align-items: flex-start;
+            width: 100%; /*ocupa a largura toda*/
+            margin: 20px 0;/*parte de cima e parte esquerda espaços*/
+            align-items: flex-start; /*comeca no lado esquerdo*/
             background-color: #ECECEC;
         }
         .vertical-links a {
@@ -74,6 +79,9 @@
             margin: 5px;
             border-radius: 5px;
             text-align: center;
+        }
+        p{
+            font-weight: bold;
         }
     </style>
 </head>
@@ -85,87 +93,109 @@
         <img class="logo" src="imagens/logo.png" alt="Logo">
     </div>
 
-    <div class="nav-links">
-        <a href="./telaPrincipal.html">Início</a>
+    <div class="horizontal-links">
+        <a href="https://www.ifsc.edu.br/">Início</a>
         <a href="./artigos.html">Artigos</a>
-        <a href="pagina3.html">Publicações</a>
-        <a href="pagina4.html">Notícias</a>
-        <a href="pagina5.html">Câmpus</a>
-        <a href="pagina6.html">Áreas de conhecimento</a>
+        <a href="https://www.ifsc.edu.br/comunidade">Publicações</a>
+        <a href="https://www.ifsc.edu.br/web/campus-gaspar/noticias">Notícias</a>
+        <a href="./telaPrincipal.html">Câmpus</a>
+        <a href="https://www.ifsc.edu.br/cursos">Áreas de conhecimento</a>
     </div>
 
-    <div class="separator-container">
+    <div class="separador-container">
         <div class="div-traco"></div>
         <span class="campus-title">CÂMPUS</span>
         <div class="div-traco"></div>
     </div>
 
     <div class="vertical-links">
-        <a href="https://www.ifsc.edu.br/web/campus-ararangua">Araranguá</a>
-        <div class="div-traco"></div>
+        <div><a href="https://www.ifsc.edu.br/web/campus-ararangua">TÍTULO DO ARTIGO</a>
+       <p>Jaqueline Brandão - 13/04/2004</p>
+        </div>    
 
-        <a href="https://www.ifsc.edu.br/web/campus-cacador">Caçador</a>
-        <div class="div-traco"></div>
+        <div> <a href="https://www.ifsc.edu.br/web/campus-cacador">Caçador</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-canoinhas">Canoinhas</a>
-        <div class="div-traco"></div>
+    <div> <a href="https://www.ifsc.edu.br/web/campus-canoinhas">Canoinhas</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-chapeco">Chapecó</a>
-        <div class="div-traco"></div>
+    <div> <a href="https://www.ifsc.edu.br/web/campus-chapeco">Chapecó</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-criciuma">Criciúma</a>
-        <div class="div-traco"></div>
+    <div>  <a href="https://www.ifsc.edu.br/web/campus-criciuma">Criciúma</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-florianopolis">Florianópolis</a>
-        <div class="div-traco"></div>
+    <div>  <a href="https://www.ifsc.edu.br/web/campus-florianopolis">Florianópolis</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-florianopolis-continente">Florianópolis-Continente</a>
-        <div class="div-traco"></div>
+    <div>  <a href="https://www.ifsc.edu.br/web/campus-florianopolis-continente">Florianópolis-Continente</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-garopaba">Garopaba</a>
-        <div class="div-traco"></div>
+    <div>  <a href="https://www.ifsc.edu.br/web/campus-garopaba">Garopaba</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-gaspar">Gaspar</a>
-        <div class="div-traco"></div>
+    <div> <a href="https://www.ifsc.edu.br/web/campus-gaspar">Gaspar</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-itajai">Itajaí</a>
-        <div class="div-traco"></div>
+    <div>  <a href="https://www.ifsc.edu.br/web/campus-itajai">Itajaí</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-jaragua-do-sul">Jaraguá do Sul - Centro</a>
-        <div class="div-traco"></div>
+    <div>   <a href="https://www.ifsc.edu.br/web/campus-jaragua-do-sul">Jaraguá do Sul - Centro</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-jaragua-do-sul">Jaraguá do Sul - Rau</a>
-        <div class="div-traco"></div>
+    <div>   <a href="https://www.ifsc.edu.br/web/campus-jaragua-do-sul">Jaraguá do Sul - Rau</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-joinville">Joinville</a>
-        <div class="div-traco"></div>
+    <div> <a href="https://www.ifsc.edu.br/web/campus-joinville">Joinville</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-lages">Lages</a>
-        <div class="div-traco"></div>
+    <div>  <a href="https://www.ifsc.edu.br/web/campus-lages">Lages</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-palhoca-bilingue">Palhoça Bilíngue</a>
-        <div class="div-traco"></div>
+    <div>   <a href="https://www.ifsc.edu.br/web/campus-palhoca-bilingue">Palhoça Bilíngue</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-sao-carlos">São Carlos</a>
-        <div class="div-traco"></div>
+    <div>   <a href="https://www.ifsc.edu.br/web/campus-sao-carlos">São Carlos</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-sao-jose">São José</a>
-        <div class="div-traco"></div>
+    <div>  <a href="https://www.ifsc.edu.br/web/campus-sao-jose">São José</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-sao-lourenco-do-oeste">São Lourenço do Oeste</a>
-        <div class="div-traco"></div>
+    <div>  <a href="https://www.ifsc.edu.br/web/campus-sao-lourenco-do-oeste">São Lourenço do Oeste</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-sao-miguel-do-oeste">São Miguel do Oeste</a>
-        <div class="div-traco"></div>
+    <div> <a href="https://www.ifsc.edu.br/web/campus-sao-miguel-do-oeste">São Miguel do Oeste</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-tubarao">Tubarão</a>
-        <div class="div-traco"></div>
+    <div>   <a href="https://www.ifsc.edu.br/web/campus-tubarao">Tubarão</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-urupema">Urupema</a>
-        <div class="div-traco"></div>
+    <div>   <a href="https://www.ifsc.edu.br/web/campus-urupema">Urupema</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
 
-        <a href="https://www.ifsc.edu.br/web/campus-xanxere">Xanxerê</a>
-        <div class="div-traco"></div>
+    <div>   <a href="https://www.ifsc.edu.br/web/campus-xanxere">Xanxerê</a>
+        <p>Jaqueline Brandão - 13/04/2004</p>
+    </div>  
     </div>
 
 </body>
