@@ -1,0 +1,18 @@
+body{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body>*{
+    max-width:300px;
+    margin:10px;
+}
+fieldset {
+    background-color: #AAAAAA;
+    box-shadow: 10px 10px 5px rgba(43, 10, 0, 0.5);
+    border-radius: 10%;
+    border: 2px solid black; /* Defina um valor para o border */
+}

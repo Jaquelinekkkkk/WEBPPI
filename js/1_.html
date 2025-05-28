@@ -37,14 +37,15 @@
     <p id="p7">g. Utilize alert() para exibir uma saudação ao carregar a página.</p>    
     <p id="p8">h. Exiba a hora atual em um parágrafo com document.getElementById().innerHTML.
     </p>
-    <p id="h"></p>    
+    <h2 id="TituloHora">Hora atual</h1>
+    <p id="hora"></p>    
     <script>
-            console.log(); // Agora usa a variável sum corretamente
-            alert("blá, blá, blá");
+            console.log("mensagem console"); // Agora usa a variável sum corretamente
+            alert("Hoje é dia 28/05/2025");
 
             let h = new Date();
-            let dataHora = dataAtual.toLocaleString();
-            document.getElementById("h").innerHTML = dataHora;
+            let horaAtual = horaAtual.toLocaleTimeString();
+            document.getElementById("hora").innerHTML = horaAtual;
 
 
 </script>
