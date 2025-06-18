@@ -39,5 +39,6 @@ foreach($arrayUSER as $u){
 
 
 }
+echo "</table>";
 
 ?>
