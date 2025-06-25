@@ -1,13 +1,15 @@
-<?php>
+<?php
 class Conexao{
     public static function getConexao(){
        //mysql__connect("localhost", "usuario", "senha", "bd");
        
        //Classe PDO connection
-       new PDO
-       return PDO('mysql:host=localhost;dbname=crud', "root", "adimin",
-  [  PDO::ATTR_ERRMODE=>PDO:: ERRMODE_EXCEPTION ]
+        return new PDO('mysql:host=localhost;dbname=crud', "root", "admin",
+  [  PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION,
+     PDO::ATTR_DEFAULT_FETCH_MODE=> PDO:: FETCH_ASSOC
+     ]
     );
-    }
+   }
 
 }
+?>
