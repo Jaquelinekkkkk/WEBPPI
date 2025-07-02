@@ -4,6 +4,7 @@ include_once __DIR__. './modelo/Usuario.php';
 include_once __DIR__. './modelo/UsuarioDAO.php';
 include_once __DIR__. './controlador/AuthController.php';
 
+session_start();
 
 if (isset($_GET['rota'])){
     $rota=$_GET['rota'];
@@ -14,6 +15,10 @@ if (isset($_GET['rota'])){
 switch ($rota){
     case 'login':
        // header("Location:login.php");
+       if(isset($_SESSION['usr'])){
+        header("Location:home.php");
+
+       }
         require "login.php";
         break;
 
@@ -22,8 +27,13 @@ switch ($rota){
         $auth->login();
         break;
      case 'home':
-         require "home.php";
+        header("Location:home.php");
         break;
+        case 'logout':
+            session_destroy();
+            header("Location:rota.php");
+
+            break;
     
     default:
         echo "Rota desconhecida";

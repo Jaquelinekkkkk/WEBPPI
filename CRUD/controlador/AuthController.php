@@ -10,7 +10,11 @@ class AuthController{
             $email=$_POST['email'];
             $senha=$_POST['senha'];
             $usr=$dao->autenticar($email,$senha);
+            //echo var_dump($usr);            exit;
+
+            
             if (isset($usr) ){
+                $_SESSION['usr']=$usr->id;
                 header("Location:rota.php?rota=home") ;   
             } else{
                 header("Location:rota.php");
