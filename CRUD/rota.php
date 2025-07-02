@@ -1,9 +1,8 @@
 <?php
-include_once __DIR__. './../Model/Conexao.php';
-include_once __DIR__. './../Model/Usuario.php';
-include_once __DIR__. './../Model/UsuarioDAO.php';
-include_once __DIR__. './../Controllers/AuthController.php';
-
+include_once __DIR__. './modelo/Conexao.php';
+include_once __DIR__. './modelo/Usuario.php';
+include_once __DIR__. './modelo/UsuarioDAO.php';
+include_once __DIR__. './controlador/AuthController.php';
 
 
 if (isset($_GET['rota'])){
@@ -11,19 +10,23 @@ if (isset($_GET['rota'])){
 }else{
     $rota="login";
 }
-switch($rota){
-    case 'login';
-         require "login.php";
-         break;
-         case 'autenticacao';
-         $auth=new AuthController();
-         $auth->login();
-         break;
-         case 'home.php':
-            break;
 
+switch ($rota){
+    case 'login':
+       // header("Location:login.php");
+        require "login.php";
+        break;
 
-         default:
-         echo "Rota desconhecida";
-}
+    case 'autenticacao':
+        $auth=new AuthController();
+        $auth->login();
+        break;
+     case 'home':
+         require "home.php";
+        break;
+    
+    default:
+        echo "Rota desconhecida";
+    }
+
 ?>
