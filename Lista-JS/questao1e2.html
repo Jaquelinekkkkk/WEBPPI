@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas sobre PHP</title>
+</head>
+<body>
+    <h1>Respostas sobre PHP</h1>
+
+    <h2>1. Quais são as tags usadas para definição de código PHP?</h2>
+    <p>As tags usadas para definir código PHP são:</p>
+    <pre>
+&lt;?php
+// Tag padrão
+echo "Olá, Mundo!"; // Exemplo de uso
+
+// Tag curta
+echo "Usando tag curta!";
+?&gt;
+<p> e necessario ser usado o sinal "&lt..." pq ele meio q engana o arquivo e nao interpreta como os sinais maior q e menor q</p>
+    </pre>
+    <p>Existem duas formas principais de iniciar e finalizar o código PHP:</p>
+    <ul>
+        <li>&lt;?php ... ?&gt; (tag padrão)</li>
+        <li>&lt;? ... ?&gt; (tag curta, pode ser desativada em alguns servidores)</li>
+    </ul>
+
+    <h2>1.1. Exemplo de uso de PHP:</h2>
+    <p>O exemplo abaixo exibe a mensagem "Olá, Mundo!" na página:</p>
+    <pre>
+&lt;?php
+<p> Exemplo de código PHP</p>
+echo "Olá, Mundo!";
+?&gt;
+    </pre>
+    <p>Ao acessar a página com o código acima, o navegador exibirá:</p>
+    <p>Olá, Mundo!</p>
+
+    <h2>2. O PHP é executado no navegador assim como o JavaScript? Explique.</h2>
+    <p>Não. O PHP não é executado diretamente no navegador como o JavaScript. O PHP é uma linguagem de programação do lado do servidor (server-side), o que significa que o código PHP é processado no servidor web antes de ser enviado para o navegador.</p>
+    <p>Quando o navegador solicita uma página PHP (por exemplo, exemplo.php), o servidor executa o código PHP e envia o resultado (geralmente HTML) para o navegador. O código PHP em si não é visível para o usuário, apenas o HTML gerado.</p>
+    <p>Em contraste, o JavaScript é executado diretamente no navegador, permitindo interações dinâmicas e manipulação do conteúdo da página em tempo real, sem a necessidade de comunicação com o servidor.</p>
+
+    <h3>Exemplo de comportamento do PHP e JavaScript:</h3>
+    <ul>
+        <li>PHP: Processado no servidor e gera HTML para ser exibido no navegador.</li>
+        <li>JavaScript: Executado no navegador e pode modificar o conteúdo da página em tempo real, sem precisar de uma nova requisição ao servidor.</li>
+    </ul>
+
+</body>
+</html>
