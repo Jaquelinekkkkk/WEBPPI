@@ -1,8 +1,8 @@
 <?php
-include_once __DIR__. './modelo/Conexao.php';
-include_once __DIR__. './modelo/Usuario.php';
-include_once __DIR__. './modelo/UsuarioDAO.php';
-include_once __DIR__. './controlador/AuthController.php';
+include_once __DIR__ . '/modelo/Conexao.php';
+include_once __DIR__ . '/modelo/Usuario.php';
+include_once __DIR__ . '/modelo/UsuarioDAO.php';
+include_once __DIR__ . '/controlador/AuthController.php';
 
 session_start();
 if(!isset($_SESSION['usr'])){

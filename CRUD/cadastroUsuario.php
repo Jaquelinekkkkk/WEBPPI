@@ -21,7 +21,10 @@
 
         <input type="submit" value="cadastrar">
 
+<nav>
+            <a href="rota.php?rota=logout">LOGOUT</a><br>
 
+</nav>
 
 
     </form> 

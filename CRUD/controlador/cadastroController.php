@@ -1,8 +1,8 @@
 <?php
 
-include_once __DIR__.'./../modelo/Conexao.php';
-include_once __DIR__.'./../modelo/Usuario.php';
-include_once __DIR__.'./../modelo/UsuarioDAO.php';
+include_once __DIR__ . '/../modelo/Conexao.php';
+include_once __DIR__ . '/../modelo/Usuario.php';
+include_once __DIR__ . '/../modelo/UsuarioDAO.php';
 
  class CadastroController{
 
@@ -14,8 +14,8 @@ include_once __DIR__.'./../modelo/UsuarioDAO.php';
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
-        $$usr = new Usuario($nome, $email, $senha);
-        $usr = $dao->inserir($usr);
+        $usr = new Usuario($nome, $email, $senha);
+        $usr = $dao->insere($usr);
    
     
     }

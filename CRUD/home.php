@@ -16,8 +16,8 @@ echo $_SESSION['usr'];
 </head>
 <body>
     <nav>
-        <a href="rota.php?rota=logout">LOGOUT</a>
-        <a href="rota.php?rota=cadastrar_usuario"Cadastrar></a>
+        <a href="rota.php?rota=logout">LOGOUT</a><br>
+        <a href="rota.php?rota=cadastro">Cadastrar</a>
     </nav>
     <h2>Lista de usuarios</h2>
     <main>
