@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 3 - Prática com Seletores CSS</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #fefefe;
+      margin: 40px;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    p:nth-of-type(1) {
+      color: #4a4a4a;
+      font-family: 'Georgia', serif;
+    }
+
+    p:nth-of-type(2) {
+      color: #005f73;
+      font-family: 'Courier New', monospace;
+    }
+
+    p:nth-of-type(3) {
+      color: #ae2012;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    p:nth-of-type(4) {
+      color: #582f0e;
+      font-family: 'Lucida Console', monospace;
+    }
+
+    span.destaque {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    span.italico {
+      font-style: italic;
+      color: teal;
+    }
+
+    span.grande {
+      font-size: 1.2em;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Explorando Seletores CSS </h1>
+
+  <p>Lorem ipsum <span class="destaque">dolor</span> sit amet, consectetur adipiscing elit. 
+     Sed do eiusmod tempor incididunt ut <span class="italico">labore</span> et dolore magna aliqua.</p>
+
+  <p>Ut enim ad minim veniam, quis nostrud <span class="grande">exercitation</span> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+  <p>Duis aute irure dolor in reprehenderit in voluptate <span class="destaque">velit esse</span> cillum dolore eu fugiat nulla pariatur.</p>
+
+  <p>Excepteur sint occaecat cupidatat non <span class="italico">proident</span>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Especificidade de Seletores</title>
+  <style>
+    /* Regra 1 */ li { color: red; }
+    /* Regra 2 */ .churras { color: green; }
+    /* Regra 3 */ .fruta { color: gray; }
+    /* Regra 4 */ li + li.churras { color: black; }
+    /* Regra 5 */ .churras[draggable="true"] { color: magenta; }
+    /* Regra 6 */ #lip1, #lip2, #lip3 { color: blue; }
+    /* Regra 7 */ #lip3.fruta { color: orange; }
+    /* Regra 8 */ ol > li.churras#lip5 { color: purple; }
+  </style>
+</head>
+<body>
+
+  <h1>Atividade 2 - Especificidade de Seletores CSS</h1>
+
+  <ol>
+    <!-- Item 1 → Regra 6 (#lip1) vence regra 1 (li) -->
+    <li id="lip1">Abacaxi</li>
+
+    <!-- Item 2 → Regra 3 (.fruta) vence regra 1 (li) -->
+    <li class="fruta">Melão</li>
+
+    <!-- Item 3 → Regra 6 (#lip2) vence .fruta (regra 3) e li (regra 1) -->
+    <li id="lip2" class="fruta">Pera</li>
+
+    <!-- Item 4 → Regra 7 (#lip3.fruta) vence tudo por ser mais específica -->
+    <li id="lip3" class="fruta">Uva</li>
+
+    <!-- Item 5 → Nenhuma regra específica. Apenas .fruta → cor cinza (regra 3) -->
+    <li id="lip4" class="fruta">Maçã</li>
+
+    <!-- Item 6 → Regra 4 (li + li.churras) se aplica pois vem após um <li> anterior -->
+    <li class="churras">Carne</li>
+
+    <!-- Item 7 → Regra 4 se aplica novamente: vem após outro <li>, tem class churras -->
+    <li class="churras">Linguiça</li>
+
+    <!-- Item 8 → Regra 5 (.churras[draggable="true"]) é mais específica que .churras -->
+    <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+  </ol>
+
+  <h2>Análise:</h2>
+  <ul>
+    <li>
+        <strong>Regra 1:</strong> é bem genérica (li) e quase sempre é sobrescrita por outras mais específicas.</li>
+    <li>
+        <strong>Regra 2 e 3:</strong> possuem a mesma especificidade (0,0,1).</li>
+    <li>
+        <strong>Regra 4:</strong> combina seletor adjacente com classe, ganhando prioridade contextual.</li>
+    <li
+    strong>Regra 5:</strong> inclui um seletor de atributo com classe → especificidade maior.</li>
+    <li>
+        <strong>Regra 6:</strong> inclui ID, que sempre vence classes e tags simples.</li>
+    <li>
+        <strong>Regra 7:</strong> combina ID + classe, vencendo qualquer regra anterior.</li>
+    <li>
+        <strong>Regra 8:</strong> um seletor super específico com tag > classe + ID — tem enorme força, mas só se aplica ao item com <code>id="lip5"</code>, que não existe no código atual.</li>
+  </ul>
+
+
+</body>
+</html>

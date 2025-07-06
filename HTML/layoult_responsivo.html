@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <style>
+        /* Resetando margens e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Definindo o layout como 100% do viewport */
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 50px 1fr 50px; /* Header, Content+Nav, Footer */
+            grid-template-columns: 200px 1fr; /* Nav (coluna) e Content */
+            height: 100vh;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            background-color: #4CAF50; /* Cor verde para o Header */
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+
+        nav {
+            background-color: #333; /* Cor escura para o Nav */
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555; /* Efeito hover nos links */
+        }
+
+        .content {
+            background-color: #f4f4f4; /* Cor clara para o conteúdo */
+            padding: 20px;
+            overflow-y: auto;
+            display: flex; /* Para colocar a imagem e o texto lado a lado */
+            gap: 20px; /* Espaçamento entre a imagem e o texto */
+        }
+
+        .content img {
+            width: 200px; /* Definindo o tamanho da imagem */
+            height: 200px; /* Tornando a imagem quadrada */
+            object-fit: cover; /* Mantendo a proporção da imagem */
+            border-radius: 8px; /* Bordas arredondadas na imagem */
+        }
+
+        .content-text {
+            flex: 1; /* Faz com que o texto ocupe o restante do espaço */
+            color: #333;
+        }
+
+        footer {
+            grid-column: 1 / -1;
+            background-color: red; /* Cor escura para o Footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <nav>
+            <p>Coluna esquerda</p>
+        </nav>
+
+        <!-- Content -->
+        <div class="content">
+            <img src ="../imagens/logo.png" alt="Imagem Exemplo">
+            <div class="content-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula ligula sit amet mauris vehicula, et dictum justo mollis. Mauris luctus massa in ante consectetur, non rutrum felis tristique. Fusce interdum quam id augue tincidunt, nec venenatis nunc scelerisque.</p>
+                <p>Nulla facilisi. Integer ac augue id sem dapibus suscipit. Aenean non dictum velit. Nam vulputate eros id odio sollicitudin tincidunt. Phasellus sollicitudin sem id massa tincidunt, at viverra nisi aliquet.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>

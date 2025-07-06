@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr; /* Colunas: A e B vão na primeira linha */
+            grid-template-rows: 200px 400px; /* C vai ocupar uma linha maior (vertical) e D o restante */
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .box {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .box-a {
+            background-color: #4CAF50; 
+            grid-column: 1 / -1; /* Ocupa toda a largura */
+        }
+
+        .box-b {
+            background-color: #2196F3; 
+            grid-row: 1;
+        }
+
+        .box-c {
+            background-color: #FF9800; 
+            grid-column: 1 / 2; /* Ocupa a primeira coluna */
+            grid-row: 2; /* Fica na segunda linha */
+        }
+
+        .box-d {
+            background-color: #9C27B0; 
+            grid-column: 2 / -1; /* Ocupa a segunda coluna e vai até o final */
+            grid-row: 2; /* Fica na segunda linha */
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-a">
+            <h2>Bloco A</h2>
+            <p>Este é o Bloco A (retângulo horizontal)</p>
+        </div>
+
+        <div class="box box-b">
+            <h2>Bloco B</h2>
+            <p>Este é o Bloco B (quadrado)</p>
+        </div>
+
+        <div class="box box-c">
+            <h2>Bloco C</h2>
+            <p>Este é o Bloco C (retângulo vertical)</p>
+        </div>
+
+        <div class="box box-d">
+            <h2>Bloco D</h2>
+            <p>Este é o Bloco D (maior retângulo)</p>
+        </div>
+    </div>
+</body>
+</html>
