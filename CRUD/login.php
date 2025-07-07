@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f2f2f2;
+            background-color: white;
             font-family: Arial, sans-serif;
         }
 
@@ -20,7 +20,7 @@
             background-color: white;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px black;
             display: flex;
             flex-direction: column;
             gap: 10px;
